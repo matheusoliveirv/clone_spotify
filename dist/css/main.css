@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+body {
+  background-color: #EEE;
+}
+
+nav {
+  width: 100vw;
+  height: 64px;
+  background-color: #000;
+  padding: 8px;
+  display: flex;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.select__music {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+.select__music .playlists, .select__music .info {
+  width: 23%;
+}
+.select__music .principal {
+  flex: 1;
+}
+
+.part {
+  background-color: #121212;
+  height: 80vh;
+  border-radius: 1rem;
+}
+
+.player {
+  width: 100vw;
+  flex: 1;
+  height: 11vh;
+  background-color: #000;
+}
+
+.playlists header {
+  color: #EEE;
+  padding: 12px 16px 8px;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+.playlists header h1 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.playlists header .btn {
+  background-color: #1F1F1F;
+  padding: 8px 16px;
+  border-radius: 1.1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.show__list {
+  color: #FFF;
+  display: none;
+  padding: 3rem 2rem;
+  gap: 1rem;
+}
+.show__list img {
+  width: 13rem;
+}
+.show__list h1 {
+  font-size: 3.5rem;
+}
+.show__list .descricao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.show__list--is-active {
+  display: flex;
+}
+
+.selecao__lista__item {
+  display: flex;
+  gap: 1rem;
+  color: #EEE;
+  padding: 0.8rem;
+  align-items: center;
+  width: 100%;
+}
+.selecao__lista__item:hover {
+  background-color: #1F1F1F;
+}
+.selecao__lista__item:active, .selecao__lista__item:focus {
+  background-color: #484848;
+}
+.selecao__lista__item img {
+  border-radius: 0.3rem;
+}
+
+.selecao__lista__item img {
+  width: 3rem;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+
+    </nav>
+    <div class="container">
+        <div class="select__music">
+            <div class="part playlists">
+                <header>
+                    <h1>Sua Biblioteca</h1>
+                    <div class="btn">Criar</div>
+                </header>
+                <div class="selecao">
+                    <div class="selecao__lista">
+                        <button data-tab-button="curtidas" class="selecao__lista__item">
+                            <img src="./src/images/assets/curtidas.jpg" alt="">
+                            <p>Músicas curtidas</p>
+                        </button>
+                        <button data-tab-button="episodios" class="selecao__lista__item">
+                            <img src="./src/images/assets/episodes.png" alt="">
+                            <p>Seus episódios</p>
+                        </button>
+                        <button data-tab-button="rock" class="selecao__lista__item">
+                            <img src="./src/images/assets/rock.jpg" alt="">
+                            <p>Rock</p>
+                        </button>
+                        <button data-tab-button="eletronicas" class="selecao__lista__item">
+                            <img src="./src/images/assets/eletronicas.jpg" alt="">
+                            <p>Eletrônicas</p>
+                        </button>
+                        <button data-tab-button="hiphop" class="selecao__lista__item">
+                            <img src="./src/images/assets/hip-hop.jpg" alt="">
+                            <p>Hip Hop</p>
+                        </button>
+                        <button data-tab-button="rap" class="selecao__lista__item">
+                            <img src="./src/images/assets/rap.jpg" alt="">
+                            <p>Rap Nacional</p>
+                        </button>
+                        <button data-tab-button="daily1" class="selecao__lista__item">
+                            <img src="./src/images/assets/daily-1.jpg" alt="">
+                            <p>Seu Daily Music #1</p>
+                        </button>
+                        <button data-tab-button="daily2" class="selecao__lista__item">
+                            <img src="./src/images/assets/daily-2.jpg" alt="">
+                            <p>Seu Daily Music #2</p>
+                        </button>
+                        <button data-tab-button="daily3" class="selecao__lista__item">
+                            <img src="./src/images/assets/daily-3.jpg" alt="">
+                            <p>Seu Daily Music #3</p>
+                        </button>
+                        <button data-tab-button="mpb" class="selecao__lista__item">
+                            <img src="./src/images/assets/mpb.jpg" alt="">
+                            <p>MPB</p>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="part principal">
+                <div data-tab-id="curtidas" class="show__list show__list--is-active">
+                    <img src="./dist/images/assets/curtidas.jpg" alt="">
+                    <div class="descricao">
+                        <p>Playlist</p>
+                        <h1>Músicas Curtidas</h1>
+                    </div>
+                </div>
+                <div data-tab-id="episodios" class="show__list">
+                    <h1>Seus episódios</h1>
+                </div>
+                <div data-tab-id="rock" class="show__list">
+                    <h1>Rock</h1>
+                </div>
+                <div data-tab-id="eletronicas" class="show__list">
+                    <h1>Eletrônicas</h1>
+                </div>
+                <div data-tab-id="hiphop" class="show__list">
+                    <h1>Hip Hop</h1>
+                </div>
+                <div data-tab-id="rap" class="show__list">
+                    <h1>Rap Nacional</h1>
+                </div>
+                <div data-tab-id="daily1" class="show__list">
+                    <h1>Seu Daily Music #1</h1>
+                </div>
+                <div data-tab-id="daily2" class="show__list">
+                    <h1>Seu Daily Music #2</h1>
+                </div>
+                <div data-tab-id="daily3" class="show__list">
+                    <h1>Seu Daily Music #3</h1>
+                </div>
+                <div data-tab-id="mpb" class="show__list">
+                    <h1>MPB</h1>
+                </div>
+            </div>
+            <div class="part info">
+                
+    
+            </div>
+        </div>
+        <div class="player">
+
+        </div>
+    </div>
+
+    <script src="./src/main.js"></script>
+</body>
+</html>
