@@ -9,7 +9,7 @@ function styles(){
 }
 
 function images(){
-    return gulp.src('./src/images/**/*') //Quais arquivos o gulop vai selecionar
+    return gulp.src('./src/images/**/*') //Quais arquivos o gulp vai selecionar
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/images')) //Joga o arquivo comprimido na pasta de destino
 }
