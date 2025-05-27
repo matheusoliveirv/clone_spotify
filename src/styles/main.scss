@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,61 +6,67 @@
 }
 
 button {
-  border: none;
-  background: transparent;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
 }
 
 $backgroundColor: #EEE;
 $primaryColor: #000;
 $secondaryColor: #121212;
 
-body{
+body {
     background-color: $backgroundColor;
 }
-nav{
+
+nav {
     width: 100vw;
     height: 64px;
     background-color: $primaryColor;
     padding: 8px;
     display: flex;
 }
-.container{
+
+.container {
     margin: 0;
     padding: 0;
     width: 100vw;
 }
-.select__music{
+
+.select__music {
     display: flex;
-    gap: 1rem; 
+    gap: 1rem;
     padding: .5rem;
 
-    .playlists, .info{
+    .playlists,
+    .info {
         width: 23%;
     }
 
-    .principal{
+    .principal {
         flex: 1;
     }
 }
-.part{
+
+.part {
     background-color: $secondaryColor;
     height: 80vh;
     border-radius: 1rem;
 }
-.player{
+
+.player {
     width: 100vw;
     flex: 1;
     height: 11vh;
     background-color: $primaryColor;
 }
 
-.playlists{
-    
-    header{
+.playlists {
+
+    header {
         color: #EEE;
         padding: 12px 16px 8px;
         width: 100%;
@@ -68,12 +74,12 @@ nav{
         display: flex;
         justify-content: space-between;
 
-        h1{
+        h1 {
             font-weight: 600;
             font-size: 1rem;
         }
 
-        .btn{
+        .btn {
             background-color: #1F1F1F;
             padding: 8px 16px;
             border-radius: 1.1rem;
@@ -83,31 +89,32 @@ nav{
     }
 }
 
-.show__list{
+.show__list {
     color: #FFF;
     display: none;
     flex-direction: column;
     padding: 3rem 2rem;
     gap: 1.5rem;
 }
-.show__list--is-active{
+
+.show__list--is-active {
     display: flex;
 }
 
-.header-reprod{
+.header-reprod {
     display: flex;
-     gap: 1rem;
+    gap: 1rem;
 
-    img{
+    img {
         width: 13rem;
         border-radius: .3rem;
     }
 
-    h1{
+    h1 {
         font-size: 3.5rem;
     }
 
-    .descricao{
+    .descricao {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -115,29 +122,52 @@ nav{
     }
 }
 
-.btn-reprod{
+.container-list {
+    border: 1px solid red;
+
+    table {
+        display: flex;
+        flex-direction: column;
+        border-spacing: 15px;
+        /* Define o espaçamento entre as células */
+        border-collapse: separate;
+        /* Necessário para o efeito de espaçamento */
+
+        td,
+        th {
+            padding: 10px 40px; /* Aumente o valor do padding lateral */
+            text-align: start;
+            border: 1px solid #ccc;
+            text-align: center;
+            vertical-align: middle;
+            /* Alinha o conteúdo verticalmente no meio */
+        }
+    }
+}
+
+.btn-reprod {
     width: 100%;
     height: 6rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    .btn-reprod-play{
+
+    .btn-reprod-play {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1.2rem;
 
-        span{
+        span {
             font-size: 2.4rem;
 
-            &.download{
+            &.download {
                 color: #999999;
             }
         }
     }
 
-    .btn-reprod-list{
+    .btn-reprod-list {
         display: flex;
         align-items: center;
         font-size: .9rem;
@@ -145,15 +175,16 @@ nav{
         color: #999999;
     }
 
-    button{
+    button {
         border-radius: 50px;
 
-        &.btn-reprod-play{
+        &.btn-reprod-play {
             background-color: #1ED760;
             width: 3.7rem;
             height: 3.7rem;
         }
-        &.btn-reprod-download{
+
+        &.btn-reprod-download {
             border: 3px solid #999999;
             color: #999999;
             width: 2rem;
@@ -164,14 +195,14 @@ nav{
 
 
 
-.selecao{
+.selecao {
     max-height: 73vh;
     overflow-y: scroll;
 }
 
 
 
-.selecao__lista__item{
+.selecao__lista__item {
     display: flex;
     gap: 1rem;
     color: #EEE;
@@ -180,19 +211,20 @@ nav{
     width: 100%;
     overflow: hidden;
 
-    &:hover{
+    &:hover {
         background-color: #1F1F1F;
     }
 
-    &:active, &:focus{
+    &:active,
+    &:focus {
         background-color: #484848;
     }
 
-    img{
+    img {
         border-radius: .3rem;
     }
 }
 
-.selecao__lista__item img{
+.selecao__lista__item img {
     width: 3rem;
 }
