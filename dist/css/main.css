@@ -147,6 +147,9 @@ nav {
   width: 3.7rem;
   height: 3.7rem;
 }
+.btn-reprod button.btn-reprod-play p {
+  font-size: 1.5rem;
+}
 .btn-reprod button.btn-reprod-download {
   border: 3px solid #999999;
   color: #999999;
