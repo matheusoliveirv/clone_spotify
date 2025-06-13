@@ -1,0 +1,57 @@
+@use 'variables';;
+
+.artist-details {
+    width: 23%; // Estilo que antes era de .info
+    background-color: #1e1e1e;
+    height: 80vh;
+    border-radius: 1rem;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__now-playing {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #333;
+        padding-bottom: 15px;
+    }
+
+    &__track-title {
+        font-size: 1.4em;
+        margin: 0 0 5px 0;
+    }
+
+    &__track-artists {
+        font-size: 0.9em;
+        color: variables.$textColorSecondary;
+        margin: 0;
+    }
+
+    &__actions {
+        display: flex;
+    }
+
+    &__action-btn {
+        color: variables.$textColorSecondary;
+        font-size: 1.5em;
+        margin-left: 10px;
+        &:hover {
+            color: variables.$textColor;
+        }
+    }
+
+    &__about-title {
+        font-size: 1em;
+        margin: 0 0 10px 0;
+        font-weight: normal;
+        color: variables.$textColorSecondary;
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 4px;
+        display: block;
+    }
+}

@@ -1,0 +1,59 @@
+@use 'variables';
+
+.library {
+    width: 23%; // Estilo que antes era de .playlist
+    background-color: variables.$secondaryColor;
+    height: 80vh;
+    border-radius: 1rem;
+
+    &__header {
+        padding: 12px 16px 8px;
+        width: 100%;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    &__create-btn {
+        background-color: #1F1F1F;
+        padding: 8px 16px;
+        border-radius: 1.1rem;
+        font-weight: 600;
+        font-size: .9rem;
+    }
+
+    &__nav {
+        max-height: calc(80vh - 56px); // Ajuste para a altura do header
+        overflow-y: scroll;
+    }
+
+    &__nav-item {
+        display: flex;
+        gap: 1rem;
+        padding: .8rem;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+
+        &:hover {
+            background-color: #1F1F1F;
+        }
+
+        &:active,
+        &:focus {
+            background-color: #484848;
+        }
+    }
+
+    &__item-cover {
+        width: 3rem;
+        height: 3rem;
+        border-radius: .3rem;
+    }
+}
