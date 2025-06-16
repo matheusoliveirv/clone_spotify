@@ -2,6 +2,7 @@
 @use 'library';
 @use 'playlist-view';
 @use 'artist-details';
+@use 'player';
 
 
 /* --- Variáveis e Estilos Globais --- */
@@ -42,21 +43,23 @@ nav {
     display: flex;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 .container {
     width: 100vw;
 }
 
 .interface {
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
     padding: .5rem;
-}
-
-.player {
-    width: 100vw;
-    flex: 1;
-    height: 11vh;
-    background-color: variables.$primaryColor;
+    background-color: #000;
 }
 
 

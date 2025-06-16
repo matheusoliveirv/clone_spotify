@@ -3,7 +3,7 @@
 .artist-details {
     width: 23%; // Estilo que antes era de .info
     background-color: #1e1e1e;
-    height: 80vh;
+    height: 81vh;
     border-radius: 1rem;
     padding: 15px;
     display: flex;
@@ -27,19 +27,6 @@
         font-size: 0.9em;
         color: variables.$textColorSecondary;
         margin: 0;
-    }
-
-    &__actions {
-        display: flex;
-    }
-
-    &__action-btn {
-        color: variables.$textColorSecondary;
-        font-size: 1.5em;
-        margin-left: 10px;
-        &:hover {
-            color: variables.$textColor;
-        }
     }
 
     &__about-title {

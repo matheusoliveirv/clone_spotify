@@ -3,7 +3,7 @@
 .playlist-view {
     flex: 1; // Estilo que antes era de .principal
     background-color: variables.$secondaryColor;
-    height: 80vh;
+    height: 81vh;
     border-radius: 1rem;
     overflow: hidden;
     overflow-y: scroll;
@@ -70,7 +70,9 @@
         align-items: center;
         justify-content: center;
         color: variables.$primaryColor;
-        font-size: 1.5rem;
+        span{
+            font-size: 2.2rem;
+        }
     }
 
     &__download-icon {
@@ -104,9 +106,18 @@
 
 .tracklist__track {
     border-bottom: 1px solid #333;
+    cursor: pointer;
     &:hover {
         background-color: #1e1e1e;
     }
+}
+.tracklist__track--is-active {
+    background-color: #2a2a2a; /* Uma cor de destaque sutil */
+}
+
+/* Garante que o hover não sobrescreva a cor de ativo */
+.tracklist__track--is-active:hover {
+    background-color: #3a3a3a;
 }
 
 .tracklist__header-index, .tracklist__track-index {
