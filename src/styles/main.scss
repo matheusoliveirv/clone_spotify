@@ -1,22 +1,29 @@
 @use 'variables';
+@use 'nav';
 @use 'library';
 @use 'playlist-view';
 @use 'artist-details';
 @use 'player';
 
-
-/* --- Variáveis e Estilos Globais --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+::-webkit-scrollbar-track {
+    background: transparent; /* Cor de fundo da trilha da scrollbar */
+}
+::-webkit-scrollbar-thumb {
+    background-color: #535353; /* Cor da barra da scrollbar (a parte que você arrasta) */
+}
+::-webkit-scrollbar {
+    width: 12px; /* Largura da scrollbar vertical */
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #727272; /* Cor da barra ao passar o mouse */
+}
 
-// Variáveis de Cor
-
-
-// Reset de Botão
 button {
     border: none;
     background: transparent;
@@ -31,10 +38,6 @@ body {
     background-color: variables.$backgroundColor;
     color: variables.$textColor;
 }
-
-
-/* --- Estrutura Principal / Layout --- */
-// Estes são para o layout geral e podem permanecer como estão.
 nav {
     width: 100vw;
     height: 64px;
@@ -61,14 +64,3 @@ nav {
     padding: .5rem;
     background-color: #000;
 }
-
-
-/* --- Bloco: Library (Sua Biblioteca) --- */
-
-
-
-/* --- Bloco: Playlist View (Conteúdo Principal) --- */
-
-
-
-/* --- Bloco: Artist Details (Informações do Artista) --- */

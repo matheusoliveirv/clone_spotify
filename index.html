@@ -14,12 +14,28 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_right" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=play_arrow,play_circle,skip_next,skip_previous" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home,play_arrow,play_circle,skip_next,skip_previous" />
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
 <body>
-    <nav>
+    <nav class="nav">
+        <div class="nav__logotipo">
+            <img src="./src/images/assets/spotify-logo.png" alt="">
+        </div>
+        <div class="nav__search">
+            <div class="nav__search__home">
+                <span class="material-symbols-rounded">home</span>
+            </div>
+            <div class="nav__search__input">
+                <input type="text" class="search-input" placeholder="O que você quer ouvir?">
+                <span class="material-symbols-rounded">search</span>
+                <span class="material-symbols-rounded">home_storage</span>
+            </div>
+        </div>
+        <div class="nav__login">
+            <button>Entrar</button>
+        </div>
 
     </nav>
     <div class="container">

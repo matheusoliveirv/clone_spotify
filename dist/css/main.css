@@ -1,4 +1,80 @@
 @charset "UTF-8";
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav__logotipo {
+  display: flex;
+  align-items: center;
+  padding: 0 1.4rem;
+  cursor: pointer;
+}
+.nav__logotipo img {
+  width: 1.8vw;
+}
+.nav__search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav__search__home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+.nav__search__home span {
+  font-size: 1.8rem;
+  color: #b3b3b3;
+}
+.nav__search__home span:hover {
+  color: #EEE;
+}
+.nav__search__input {
+  display: flex;
+  align-items: center;
+  width: 30rem;
+  background-color: #282828;
+  border-radius: 30px;
+  padding: 0.4rem 1.1rem;
+}
+.nav__search__input span {
+  color: #b3b3b3;
+  font-size: 1.8rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.nav__search__input span:hover {
+  color: #EEE;
+}
+.nav__search__input .search-input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  color: #EEE;
+  font-size: 1rem;
+  outline: none;
+  padding: 5px 10px;
+}
+.nav__search__input .search-input .search-input::placeholder {
+  color: #a0a0a0;
+}
+.nav__login {
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  background-color: #EEE;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
 .library {
   width: 23%;
   background-color: #121212;
@@ -385,12 +461,27 @@
   border-radius: 2px;
 }
 
-/* --- Variáveis e Estilos Globais --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Cor de fundo da trilha da scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #535353; /* Cor da barra da scrollbar (a parte que você arrasta) */
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Largura da scrollbar vertical */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #727272; /* Cor da barra ao passar o mouse */
 }
 
 button {
@@ -408,7 +499,6 @@ body {
   color: #EEE;
 }
 
-/* --- Estrutura Principal / Layout --- */
 nav {
   width: 100vw;
   height: 64px;
@@ -431,7 +521,3 @@ nav {
   padding: 0.5rem;
   background-color: #000;
 }
-
-/* --- Bloco: Library (Sua Biblioteca) --- */
-/* --- Bloco: Playlist View (Conteúdo Principal) --- */
-/* --- Bloco: Artist Details (Informações do Artista) --- */

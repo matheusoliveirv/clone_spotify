@@ -1,0 +1,89 @@
+@use 'variables';
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+    &__logotipo {
+        display: flex;
+        align-items: center;
+        padding: 0 1.4rem;
+        cursor: pointer;
+
+        img {
+            width: 1.8vw;
+        }
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        &__home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #282828;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            cursor: pointer;
+
+            span {
+                font-size: 1.8rem;
+                color: variables.$textColorSecondary;
+
+                &:hover {
+                    color: variables.$textColor;
+                }
+            }
+        }
+
+        &__input {
+            display: flex;
+            align-items: center;
+            width: 30rem;
+            background-color: #282828;
+            border-radius: 30px;
+            padding: .4rem 1.1rem;
+
+            span {
+                color: variables.$textColorSecondary;
+                font-size: 1.8rem;
+                margin-left: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    color: variables.$textColor;
+                }
+            }
+
+            .search-input {
+                flex-grow: 1;
+                background-color: transparent;
+                border: none;
+                color: variables.$textColor;
+                font-size: 1rem;
+                outline: none;
+                padding: 5px 10px;
+
+                .search-input::placeholder {
+                    color: #a0a0a0;
+                }
+            }
+        }
+    }
+
+    &__login {
+        padding: .8rem 1.8rem;
+        border-radius: 2rem;
+        background-color: variables.$textColor;
+        color: variables.$primaryColor;
+        font-weight: bold;
+        font-size: .9rem;
+        cursor: pointer;
+    }
+}
