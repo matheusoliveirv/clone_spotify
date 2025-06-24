@@ -14,7 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_right" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home,play_arrow,play_circle,skip_next,skip_previous" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_circle,play_arrow,play_circle,skip_next,skip_previous" />
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
@@ -138,7 +138,7 @@
                                         <th class="tracklist__header-title">Título</th>
                                         <th class="tracklist__header-album">Álbum</th>
                                         <th class="tracklist__header-date">Adicionada em</th>
-                                        <th class="tracklist__header-duration">⏱</th>
+                                        <th class="tracklist__header-duration"><span class="material-symbols-rounded">pace</span></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -246,8 +246,7 @@
 
                 <div data-tab-id="episodios" class="playlist-view__content">
                     <header class="playlist-view__header">
-                        <img src="./dist/images/assets/episodes.png" alt="Episódios"
-                            class="playlist-view__cover-art">
+                        <img src="./dist/images/assets/episodes.png" alt="Episódios" class="playlist-view__cover-art">
                         <div class="playlist-view__details">
                             <p class="playlist-view__type">Playlist</p>
                             <h1 class="playlist-view__title">Seus episódios</h1>
@@ -385,8 +384,7 @@
 
                 <div data-tab-id="rock" class="playlist-view__content">
                     <header class="playlist-view__header">
-                        <img src="./dist/images/assets/rock.jpg" alt="Rock"
-                            class="playlist-view__cover-art">
+                        <img src="./dist/images/assets/rock.jpg" alt="Rock" class="playlist-view__cover-art">
                         <div class="playlist-view__details">
                             <p class="playlist-view__type">Playlist</p>
                             <h1 class="playlist-view__title">Rock</h1>
@@ -663,8 +661,7 @@
 
                 <div data-tab-id="hiphop" class="playlist-view__content">
                     <header class="playlist-view__header">
-                        <img src="./dist/images/assets/hip-hop.jpg" alt="Hip-Hop"
-                            class="playlist-view__cover-art">
+                        <img src="./dist/images/assets/hip-hop.jpg" alt="Hip-Hop" class="playlist-view__cover-art">
                         <div class="playlist-view__details">
                             <p class="playlist-view__type">Playlist</p>
                             <h1 class="playlist-view__title">Hip-Hop</h1>
@@ -802,8 +799,7 @@
 
                 <div data-tab-id="rap" class="playlist-view__content">
                     <header class="playlist-view__header">
-                        <img src="./dist/images/assets/rap.jpg" alt="Rap"
-                            class="playlist-view__cover-art">
+                        <img src="./dist/images/assets/rap.jpg" alt="Rap" class="playlist-view__cover-art">
                         <div class="playlist-view__details">
                             <p class="playlist-view__type">Playlist</p>
                             <h1 class="playlist-view__title">Rap</h1>
@@ -1358,8 +1354,7 @@
 
                 <div data-tab-id="mpb" class="playlist-view__content">
                     <header class="playlist-view__header">
-                        <img src="./dist/images/assets/mpb.jpg" alt="MPB"
-                            class="playlist-view__cover-art">
+                        <img src="./dist/images/assets/mpb.jpg" alt="MPB" class="playlist-view__cover-art">
                         <div class="playlist-view__details">
                             <p class="playlist-view__type">Playlist</p>
                             <h1 class="playlist-view__title">MPB</h1>
@@ -1497,24 +1492,36 @@
             </div>
 
             <div class="artist-details">
+                <div class="artist-details__cover">
+                    <div class="artist-details__overlay"></div>
+                    <h2 class="artist-details__name">Xavier Top Floor</h2>
+                </div>
 
-                <div class="artist-details__content">
-                    <div class="artist-details__now-playing">
-                        <div class="artist-details__text-info">
-                            <h1 id="details-track-title" class="artist-details__track-title"></h1>
-                            <p id="details-track-artists" class="artist-details__track-artists"></p>
-                        </div>
-                    </div>
-                    <div class="artist-details__about">
-                        <h2 class="artist-details__about-title">Sobre o artista</h2>
-                        <img id="details-artist-image" src="" alt="Foto do Artista" class="artist-details__image">
+                <div class="artist-details__song-info">
+                    <h3 class="artist-details__song-title">Keep My Head</h3>
+                    <p class="artist-details__song-artist">Xavier Top Floor, Tre Aces</p>
+                    <span class="material-symbols-outlined artist-details__check-icon">check_circle</span>
+                </div>
+
+                <div class="artist-details__artist-section">
+                    <img src="https://i.scdn.co/image/ab67616100005174501006692ed4cd9b27e0d41c" alt="Xavier Top Floor" class="artist-details__image" />
+                    <div class="artist-details__info">
+                        <h4 class="artist-details__info-heading">Sobre o artista</h4>
+                        <h3 class="artist-details__info-name">Xavier Top Floor</h3>
+                        <p class="artist-details__listeners">47.195 ouvintes mensais</p>
+                        <button class="artist-details__follow-btn">Seguir</button>
+                        <p class="artist-details__bio">Come up & Stay down<br>@Xaviertopfloor</p>
                     </div>
                 </div>
 
-                <div class="artist-details__placeholder artist-details__placeholder--is-active">
-                    <p>Selecione uma playlist para ver os detalhes.</p>
+                <div class="artist-details__credits">
+                    <h4 class="artist-details__credits-heading">Créditos</h4>
+                    <div class="artist-details__credit-info">
+                        <p class="artist-details__credit-name"><strong>Xavier Top Floor</strong></p>
+                        <span class="artist-details__credit-role">Artista Principal, Letrista</span>
+                        <button class="artist-details__follow-btn">Seguir</button>
+                    </div>
                 </div>
-
             </div>
 
         </div>
