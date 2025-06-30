@@ -1,7 +1,7 @@
 @use 'variables';
 
 .library {
-    width: 23%; // Estilo que antes era de .playlist
+    width: 23%; 
     background-color: variables.$secondaryColor;
     height: 81vh;
     border-radius: 1rem;
@@ -29,7 +29,7 @@
     }
 
     &__nav {
-        max-height: calc(80vh - 56px); // Ajuste para a altura do header
+        max-height: calc(80vh - 56px);
         overflow-y: scroll;
     }
 

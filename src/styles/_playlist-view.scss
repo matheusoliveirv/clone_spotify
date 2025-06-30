@@ -1,7 +1,7 @@
 @use 'variables';
 
 .playlist-view {
-    flex: 1; // Estilo que antes era de .principal
+    flex: 1;
     background-color: variables.$secondaryColor;
     height: 81vh;
     border-radius: 1rem;
@@ -9,13 +9,13 @@
     overflow-y: scroll;
 
     &__content {
-        display: none; // Por padrão, as abas estão ocultas
+        display: none;
         flex-direction: column;
         padding: 3rem 2rem;
         gap: 1.5rem;
 
         &--is-active {
-            display: flex; // Modificador para mostrar a aba ativa
+            display: flex;
         }
     }
 
@@ -30,7 +30,7 @@
         border-radius: .3rem;
         box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
     }
-    
+
     &__details {
         display: flex;
         flex-direction: column;
@@ -54,7 +54,7 @@
         align-items: center;
         justify-content: space-between;
     }
-    
+
     &__main-actions {
         display: flex;
         align-items: center;
@@ -70,7 +70,8 @@
         align-items: center;
         justify-content: center;
         color: variables.$primaryColor;
-        span{
+
+        span {
             font-size: 2.2rem;
         }
     }
@@ -79,6 +80,7 @@
         font-size: 2.4rem;
         color: variables.$textColorSecondary;
         cursor: pointer;
+
         &:hover {
             color: variables.$textColor;
         }
@@ -94,84 +96,91 @@
 }
 
 
-/* --- Componente Tracklist (usado dentro de Playlist View) --- */
-// Pode ser tratado como um bloco próprio ou elementos do playlist-view.
-// Tratar como um bloco `tracklist` é mais reutilizável.
-.playlist-view__tracklist{
-    table{
-      width: 100%;
-      border-collapse: collapse;
+.playlist-view {
+    .tracklist__track--is-active {
+        background-color: #2a2a2a;
+
     }
-}
 
-.tracklist__track {
-    border-bottom: 1px solid #333;
-    cursor: pointer;
-    &:hover {
-        background-color: #1e1e1e;
+    .tracklist__track--is-active:hover {
+        background-color: #3a3a3a;
     }
-}
-.tracklist__track--is-active {
-    background-color: #2a2a2a; /* Uma cor de destaque sutil */
-}
 
-/* Garante que o hover não sobrescreva a cor de ativo */
-.tracklist__track--is-active:hover {
-    background-color: #3a3a3a;
-}
+    &__tracklist {
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+    }
 
-.tracklist__header-index, .tracklist__track-index {
-    width: 30px;
-    color: variables.$textColorSecondary;
-}
+    .tracklist {
 
-.tracklist__header-title,
-.tracklist__header-album,
-.tracklist__header-date,
-.tracklist__header-duration {
-    color: variables.$textColorSecondary;
-    font-weight: normal;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-bottom: 1px solid #333;
-    text-align: left;
-    padding-left: 1rem;
-}
+        &__header-index,
+        &__track-index {
+            width: 30px;
+            color: variables.$textColorSecondary;
+        }
 
-.tracklist__header-duration, .tracklist__track-duration {
-    text-align: left;
-}
+        &__header-title,
+        &__header-album,
+        &__header-date,
+        &__header-duration {
+            color: variables.$textColorSecondary;
+            font-weight: normal;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #333;
+            text-align: left;
+            padding-left: 1rem;
+        }
 
-// Estilos de célula
-.tracklist__track td {
-    padding: 12px 16px;
-    text-align: left;
-    vertical-align: middle;
-}
+        &__header-duration,
+        &__track-duration {
+            text-align: left;
+        }
 
-.tracklist__track-title-cell {
-    display: flex;
-    align-items: center;
-}
+        &__track-title-cell {
+            display: flex;
+            align-items: center;
+        }
 
-.tracklist__track-cover {
-    width: 40px;
-    height: 40px;
-    border-radius: 4px;
-    margin-right: 12px;
-}
+        &__track-cover {
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            margin-right: 12px;
+        }
 
-.tracklist__track-info {
-    display: flex;
-    flex-direction: column;
-}
+        &__track-info {
+            display: flex;
+            flex-direction: column;
+        }
 
-.tracklist__track-name {
-    font-weight: 500;
-    color: variables.$textColor;
-}
+        &__track-name {
+            font-weight: 500;
+            color: variables.$textColor;
+        }
 
-.tracklist__track-artist, .tracklist__track-album, .tracklist__track-date {
-    font-size: 14px;
-    color: variables.$textColorSecondary;
+        &__track-artist,
+        &__track-album,
+        &__track-date {
+            font-size: 14px;
+            color: variables.$textColorSecondary;
+        }
+
+        &__track {
+            td {
+                padding: 12px 16px;
+                text-align: left;
+                vertical-align: middle;
+            }
+
+            border-bottom: 1px solid #333;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #1e1e1e;
+            }
+        }
+    }
 }
